@@ -1,0 +1,81 @@
+body {padding:0px; margin:0; background:#808000; font-size:14px; font-family:Arial, Sans-serif;}
+#basic {width:960px; min-height:950px; margin:0 auto; padding:20px 20px 20px 20px; background:#FFE4B5;}
+img {border:0;}
+a {color:#ff9c00;}
+a:hover {text-decoration:none;}
+li.none-bg {background:none!important;}
+#top-menu {width:960px; height:74px; }
+.bg-1 {width:950px; height:64px; background:#f8f8ff url(images/m1.png) repeat-x; padding:0 0 0 10px;}
+.bg-2 {width:940px; height:8px; background:#808000; margin:0 auto;}
+.bg-1 ul {margin:0; padding:0; list-style:none;}
+.bg-1 ul li {float:left; background:url(images/m2.png) no-repeat right center; padding:0 2px 0 0;}
+.bg-1 ul li a {display:block; height:40px; padding:24px 7px 0 7px; color:#000000; text-decoration:none; text-transform:uppercase;}
+.bg-1 ul li a:hover {color:#fff; background:#808000;}
+.fig {
+    display: block;
+    text-align: center; 
+    font-style: italic; 
+    margin-top: 25;
+    margin-bottom: 20px; 
+    color: #000000; 
+   }
+.info{
+     padding: 20px 10px 15px 20px;
+}
+.image{ 
+margin: 20px;
+}
+#gallery1 {
+  position: relative;
+  padding-top: 50%;
+  -moz-user-select: none; user-select: none;
+}
+
+#gallery1 img {
+position: absolute;
+top: 12.5%;
+left: 12.5%;
+max-width: 24.5%;
+max-height: 24.5%;
+-webkit-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+cursor: zoom-in;
+transition: .2s;
+}
+#gallery1 img:nth-child(4n-2) {left: 37.5%;}
+#gallery1 img:nth-child(4n-1) {left: 62.5%;}
+#gallery1 img:nth-child(4n) {left: 87.5%;}
+#gallery1 img:nth-child(n+5) {top: 37.5%;}
+#gallery1 img:nth-child(n+9) {top: 62.5%;}
+#gallery1 img:nth-child(n+13) {top: 87.5%;}
+
+#gallery1 img:focus {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 31;
+  max-width: 100%;
+  max-height: 100%;
+  outline: none;
+  pointer-events: none;
+}
+
+#gallery1 img:focus ~ div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+  background: rgba(240,240,240,.9);
+  cursor: zoom-out;
+}
+.dost2{ 
+margin: 20px;
+}
+.dost3{ 
+margin: 20px;
+}
+.dost4{ 
+margin: 20px;
+}
